@@ -1,0 +1,40 @@
+@charset "utf-8";
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: #8B0000;  
+  color: #000;           
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+  color: #000;
+}
+
+#wrapper {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.columns {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.weekly, #project {
+  flex: 1;
+  padding: 0 10px;
+}
+
+a {
+  color: #000;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #333;
+}
+
+
