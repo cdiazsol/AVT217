@@ -1,0 +1,103 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  position: relative; 
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+img {
+  width: 50%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+
+.box1 {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: lightcoral;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+
+.box2 {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: aquamarine;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.insidebox2 {
+  background-color: burlywood;
+  padding: 5px;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+
+.box3 {
+  position: relative;
+  top: 20px;
+  left: 30px;
+  background-color: lightblue;
+  padding: 10px;
+  margin: 30px 0;
+  border-radius: 8px;
+}
+
+
+.box4 {
+  position: sticky;
+  top: 0;
+  background-color: lightgreen;
+  padding: 10px;
+  border: 2px solid green;
+  border-radius: 8px;
+}
+
+
+.box5 {
+  float: left;
+  width: 45%;
+  background-color: peachpuff;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+.box6 {
+  float: right;
+  width: 45%;
+  background-color: plum;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+
+.container::after {
+  content: "";
+  display: block;
+  clear: both;
+}
