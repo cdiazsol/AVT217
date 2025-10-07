@@ -11,41 +11,48 @@ body {
 .container {
   width: 80%;
   margin: 0 auto;
-  position: relative; 
+  position: relative;
+  padding-bottom: 150px; /* give room for absolute box */
 }
 
 h1 {
   text-align: center;
-  margin: 20px 0;
+  margin: 30px 0;
   color: #333;
 }
 
+/* Image styling */
 img {
-  width: 35%;         
+  width: 60%;           /* bigger image */
   height: auto;
   display: block;
-  margin: 20px auto;
+  margin: 20px auto 60px auto; /* adds nice bottom space */
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
+/* Base style for all boxes */
 div[class^="box"] {
   border: 2px solid #333;
   border-radius: 10px;
-  padding: 15px;
-  margin: 20px;
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin: 50px 0; /* more vertical spacing */
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.15);
   background-color: #fff;
+  max-width: 500px;
 }
 
+/* Box 1: Absolute */
 .box1 {
   position: absolute;
-  bottom: 10px;
-  left: 10px;
+  bottom: 30px;
+  left: 40px;
   background-color: #ffb3b3;
   width: 250px;
+  z-index: 2;
 }
 
+/* Box 2: Fixed */
 .box2 {
   position: fixed;
   top: 20px;
@@ -53,6 +60,7 @@ div[class^="box"] {
   background-color: #a3ffe3;
   width: 250px;
   z-index: 10;
+  box-shadow: 0 0 12px rgba(0,0,0,0.3);
 }
 
 .insidebox2 {
@@ -62,40 +70,46 @@ div[class^="box"] {
   border-radius: 5px;
 }
 
+/* Box 3: Relative */
 .box3 {
   position: relative;
-  left: 30px;
+  left: 20px;
   background-color: #b3d9ff;
-  width: 300px;
 }
 
+/* Box 4: Sticky */
 .box4 {
   position: sticky;
   top: 0;
   background-color: #c8ffb3;
   border: 2px solid green;
   z-index: 5;
-  width: 300px;
+}
+
+/* Box 5 and 6: Floats, now spaced and cleared */
+.box5, .box6 {
+  width: 40%;
+  padding: 20px;
+  min-height: 100px;
 }
 
 .box5 {
   float: left;
-  width: 40%;
   background-color: #ffd6a3;
+  margin-right: 5%;
 }
 
 .box6 {
   float: right;
-  width: 40%;
   background-color: #e5b3ff;
+  margin-left: 5%;
 }
 
-/* Clear floats at the end of container */
-.container::after {
-  content: "";
-  display: block;
+/* Clear float below them */
+.clear {
   clear: both;
 }
+
 
 .scroll-space {
   height: 1200px;
