@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seven Principles of Typographic Contrast</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    /* Core Typography Design */
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 40px;
+      background: #f7f5f2;
+      color: #111;
+      line-height: 1.7;
+    }
+
+    #wrapper {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8em;
+      margin-bottom: 10px;
+      color: #222;
+      letter-spacing: 0.5px;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      color: #8B0000;
+      border-left: 4px solid #8B0000;
+      padding-left: 10px;
+      margin-top: 60px;
+    }
+
+    h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5em;
+      margin-top: 40px;
+      color: #333;
+    }
+
+    p {
+      margin: 18px 0;
+      font-size: 1.05em;
+    }
+
+    em {
+      font-style: italic;
+      color: #555;
+    }
+
+    strong {
+      font-weight: 700;
+      color: #8B0000;
+    }
+
+    .intro {
+      font-size: 1.2em;
+      line-height: 1.8;
+      border-left: 3px solid #8B0000;
+      padding-left: 20px;
+      color: #333;
+      margin-bottom: 40px;
+    }
+
+    .principle {
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px 25px;
+      margin: 25px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      margin-top: 80px;
+      text-align: center;
+      font-size: 0.9em;
+      color: #555;
+      border-top: 1px solid #ccc;
+      padding-top: 20px;
+    }
+
+    /* Typographic contrasts demonstrated */
+    .contrast-size h3 { font-size: 2em; }
+    .contrast-weight strong { font-weight: 900; }
+    .contrast-form em { font-family: 'Playfair Display', serif; font-style: italic; }
+    .contrast-structure { font-family: 'Roboto Mono', monospace; }
+    .contrast-texture p { letter-spacing: 0.5px; }
+    .contrast-color h3 { color: #8B0000; }
+    .contrast-direction { transform: rotate(-2deg); display: inline-block; }
+  </style>
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <h1>Seven Principles of Typographic Contrast</h1>
+      <p class="intro">
+        In typography, as in music, harmony and contrast are the keys to composition.<br>
+        <em>Written by John D. Berry, based on the teachings of Carl Dair</em>
+      </p>
+    </header>
+
+    <section>
+      <h2>Harmony and Contrast</h2>
+      <p>The late Canadian typographer <strong>Carl Dair</strong> was one of the great typographic designers of the 1950s and 1960s, known for his ability to explain and demonstrate the expressive power of type. His book <em>Design With Type</em> remains a foundational guide for designers who seek to make type not just readable, but meaningful.</p>
+      <p>Dair believed that the essence of design lies in the deliberate play between harmony and contrast — rhythm and emphasis. Typography, like music, depends on variation, tempo, and structure to create meaning and beauty.</p>
+    </section>
+
+    <section>
+      <h2>Seven Kinds of Contrast</h2>
+      <p>In his fifth booklet of <em>A Typographic Quest</em>, Carl Dair identifies seven key types of typographic contrast that bring life and clarity to design. Each principle is a way to make type speak more powerfully and distinctly.</p>
+
+      <div class="principle contrast-size">
+        <h3>1. Contrast of Size</h3>
+        <p>A simple but dramatic <strong>change in size</strong> draws attention and establishes hierarchy. Large titles paired with smaller text create rhythm and focus, guiding the reader through the composition.</p>
+      </div>
+
+      <div class="principle contrast-weight">
+        <h3>2. Contrast of Weight</h3>
+        <p>Bold type stands out among lighter text, establishing visual anchors. This principle also applies to other visual elements — lines, rules, or dots — that can emphasize certain parts of the layout.</p>
+      </div>
+
+      <div class="principle contrast-form">
+        <h3>3. Contrast of Form</h3>
+        <p>Differences between <em>roman</em> and <strong>italic</strong> type, or between uppercase and lowercase letters, create dynamic tension. Dair warned, however, against mixing scripts and italics together since both mimic handwriting and may conflict rather than contrast.</p>
+      </div>
+
+      <div class="principle contrast-structure">
+        <h3>4. Contrast of Structure</h3>
+        <p>This involves using distinctly different <strong>typeface families</strong> — for example, pairing a monoline sans serif with a high-contrast modern serif. The goal is not just variation, but complementary distinction.</p>
+      </div>
+
+      <div class="principle contrast-texture">
+        <h3>5. Contrast of Texture</h3>
+        <p>Typography has texture — the overall pattern of light and dark formed by text on a page. Adjusting line spacing, letter spacing, and typeface combinations affects how this “fabric of communication” feels and reads.</p>
+      </div>
+
+      <div class="principle contrast-color">
+        <h3>6. Contrast of Color</h3>
+        <p>Color contrast influences tone and hierarchy. Even a shift from black to dark gray can change the reader’s perception of importance. Always consider <strong>tonal value</strong> and background when applying color.</p>
+      </div>
+
+      <div class="principle">
+        <h3 class="contrast-direction">7. Contrast of Direction</h3>
+        <p>Directional contrast plays with alignment and angle — vertical versus horizontal, or slight rotation. A single diagonal element can bring energy and motion to an otherwise static layout.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Other Types of Contrast</h2>
+      <p>Dair also mentions <strong>contrast by isolation</strong>, where an element stands apart from others to capture attention. Non-typographic contrasts — like paper texture or ink finish — also contribute to a composition’s tactile and visual rhythm.</p>
+      <p>Ultimately, Dair’s ideas teach us to be intentional: contrast should always be strong and purposeful. Subtle differences often fail to communicate; strong contrast creates clarity and rhythm.</p>
+    </section>
+
+    <footer>
+      <p>Based on “Typographic Contrast” by Carl Dair, interpreted by John D. Berry.<br>
+      Designed with typographic principles — form, function, and beauty in mind.</p>
+    </footer>
+  </div>
+</body>
+</html>
