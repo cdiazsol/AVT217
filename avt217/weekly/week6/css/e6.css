@@ -23,7 +23,7 @@ h1 {
 
 /* Image styling */
 img {
-  width: 60%;           /* bigger image */
+  width: 80%;           /* bigger image */
   height: auto;
   display: block;
   margin: 20px auto 60px auto; /* adds nice bottom space */
@@ -45,12 +45,16 @@ div[class^="box"] {
 /* Box 1: Absolute */
 .box1 {
   position: absolute;
-  bottom: 30px;
+  top: 80px;           /* was bottom — now appears near top */
   left: 40px;
   background-color: #ffb3b3;
-  width: 250px;
+  width: 280px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   z-index: 2;
 }
+
 
 /* Box 2: Fixed */
 .box2 {
@@ -114,4 +118,5 @@ div[class^="box"] {
 .scroll-space {
   height: 1200px;
 }
+
 
