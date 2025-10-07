@@ -1,103 +1,125 @@
-@charset "utf-8";
-/* CSS Document */
+/* css/style.css
+   - Imports two web fonts (Playfair Display and Roboto)
+   - Uses only 3 colors: white, charcoal (text), and a single accent (deep red)
+*/
 
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap");
+
+:root{
+  --bg: #ffffff;         /* 1) background (white) */
+  --text: #111111;       /* 2) main text (charcoal) */
+  --accent: #8B0000;     /* 3) accent (deep red) */
+  --measure: 60ch;       /* comfortable line length */
 }
 
-.container {
-  width: 80%;
-  margin: 0 auto;
-  position: relative; 
+*{box-sizing: border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: "Roboto", system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  padding:48px 20px;
 }
 
-h1 {
-  text-align: center;
-  margin: 20px 0;
+/* Page layout: centered, narrow measure */
+.page{
+  max-width: calc(var(--measure) + 5rem);
+  margin:0 auto;
 }
 
-img {
-  width: 50%;
-  height: auto;
-  display: block;
-  margin: 20px auto;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+/* Masthead: clear hierarchy using Playfair Display for headings */
+.masthead .title{
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 2.25rem;
+  margin: 0 0 0.35rem 0;
+  line-height:1.05;
+  letter-spacing: 0.2px;
+  font-weight: 700;
+  color: var(--text);
 }
 
-
-.box1 {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  background-color: lightcoral;
-  padding: 10px;
-  border-radius: 8px;
+/* Byline: lighter weight, slightly smaller */
+.byline{
+  margin:0;
+  font-size: 1rem;
+  color: var(--text);
+  opacity: 0.9;
 }
 
-
-.box2 {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  background-color: aquamarine;
-  padding: 10px 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+/* Content spacing: only subtle grouping, not many boxes */
+.content > section{
+  margin-top: 1.25rem;
+  padding: 0;               /* keep it minimal */
 }
 
-.insidebox2 {
-  background-color: burlywood;
-  padding: 5px;
-  margin-top: 5px;
-  border-radius: 5px;
+/* Secondary headings in serif for contrast of structure */
+h2{
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+  margin: 1.2rem 0 0.5rem 0;
+  color: var(--text);
+  letter-spacing: 0.3px;
 }
 
-
-.box3 {
-  position: relative;
-  top: 20px;
-  left: 30px;
-  background-color: lightblue;
-  padding: 10px;
-  margin: 30px 0;
-  border-radius: 8px;
+/* Tertiary headings show size contrast */
+h3{
+  font-family: "Playfair Display", serif;
+  font-size: 1rem;
+  margin:0.9rem 0 0.25rem 0;
+  font-weight: 400;
+  color: var(--text);
 }
 
-
-.box4 {
-  position: sticky;
-  top: 0;
-  background-color: lightgreen;
-  padding: 10px;
-  border: 2px solid green;
-  border-radius: 8px;
+/* Paragraph rules: comfortable measure, modest spacing */
+.content p{
+  margin: 0.6rem 0;
+  font-size: 1rem;
+  max-width: var(--measure);
 }
 
-
-.box5 {
-  float: left;
-  width: 45%;
-  background-color: peachpuff;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 8px;
+/* Accent class: only uses the single accent color (3-color rule kept) */
+.accent{
+  color: var(--accent);
+  font-weight: 700;
 }
 
-.box6 {
-  float: right;
-  width: 45%;
-  background-color: plum;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 8px;
+/* Small closing note with directional contrast (rotated arrow) */
+.note{
+  margin-top: 1.1rem;
+  font-size: .98rem;
+  color: var(--text);
+  display:flex;
+  align-items:center;
+  gap: .5rem;
 }
 
-
-.container::after {
-  content: "";
-  display: block;
-  clear: both;
+/* visual directional hint: slight rotation to suggest direction contrast */
+.dir{
+  display:inline-block;
+  transform: rotate(-10deg);
+  font-weight:700;
+  color:var(--accent);
+  width: 1.1rem;
+  text-align:center;
 }
+
+/* Footer: minimal */
+.site-footer{
+  margin-top: 2.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(17,17,17,0.06);
+  color: var(--text);
+  font-size: .95rem;
+}
+
+/* Accessibility tweaks */
+a{color:var(--accent)}
+strong{font-weight:700}
+em{font-style:italic}
+
+
