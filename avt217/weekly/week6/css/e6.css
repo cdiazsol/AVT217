@@ -5,99 +5,99 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #f9f9f9;
 }
 
 .container {
   width: 80%;
   margin: 0 auto;
-  position: relative; /* important for absolute children */
+  position: relative; 
 }
 
 h1 {
   text-align: center;
   margin: 20px 0;
+  color: #333;
 }
 
 img {
-  width: 50%;
+  width: 35%;         
   height: auto;
   display: block;
   margin: 20px auto;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-/* Box 1: Absolute */
+div[class^="box"] {
+  border: 2px solid #333;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 20px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  background-color: #fff;
+}
+
 .box1 {
   position: absolute;
-  bottom: 20px;
-  left: 20px;
-  background-color: lightcoral;
-  padding: 10px;
-  border-radius: 8px;
+  bottom: 10px;
+  left: 10px;
+  background-color: #ffb3b3;
+  width: 250px;
 }
 
-/* Box 2: Fixed */
 .box2 {
   position: fixed;
-  top: 10px;
-  right: 10px;
-  background-color: aquamarine;
-  padding: 10px 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  top: 20px;
+  right: 20px;
+  background-color: #a3ffe3;
+  width: 250px;
+  z-index: 10;
 }
 
 .insidebox2 {
-  background-color: burlywood;
+  background-color: #ffebcd;
   padding: 5px;
   margin-top: 5px;
   border-radius: 5px;
 }
 
-/* Box 3: Relative */
 .box3 {
   position: relative;
-  top: 20px;
   left: 30px;
-  background-color: lightblue;
-  padding: 10px;
-  margin: 30px 0;
-  border-radius: 8px;
+  background-color: #b3d9ff;
+  width: 300px;
 }
 
-/* Box 4: Sticky */
 .box4 {
   position: sticky;
   top: 0;
-  background-color: lightgreen;
-  padding: 10px;
+  background-color: #c8ffb3;
   border: 2px solid green;
-  border-radius: 8px;
+  z-index: 5;
+  width: 300px;
 }
 
-/* Box 5 and 6: Float */
 .box5 {
   float: left;
-  width: 45%;
-  background-color: peachpuff;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 8px;
+  width: 40%;
+  background-color: #ffd6a3;
 }
 
 .box6 {
   float: right;
-  width: 45%;
-  background-color: plum;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 8px;
+  width: 40%;
+  background-color: #e5b3ff;
 }
 
-/* Clear floats for rest of content */
+/* Clear floats at the end of container */
 .container::after {
   content: "";
   display: block;
   clear: both;
 }
+
+.scroll-space {
+  height: 1200px;
+}
+
