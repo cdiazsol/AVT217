@@ -1,9 +1,7 @@
-/* Simple, minimalist layout with three colors: white, dark gray, and blue */
-
 :root {
   --bg-color: #ffffff;
   --text-color: #222222;
-  --accent-color: #1e4ed8; /* deep blue */
+  --accent-color: #1e4ed8; 
 }
 
 body {
@@ -38,7 +36,7 @@ main {
 }
 
 .content {
-  max-width: 700px; /* keeps column narrow and centered */
+  max-width: 700px; 
   padding: 2rem 1.5rem;
 }
 
@@ -60,6 +58,7 @@ footer {
   color: #555;
   margin-top: 2rem;
 }
+
 
 
 
