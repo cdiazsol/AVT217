@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+/* ----- ROWS ----- */
+.row1 {
+    width: 908px;
+    height: 67px;
+    background-color: #D97373; /* soft red */
+}
+
+.row2 {
+    width: 908px;
+    height: 31px;
+    background-color: #B47C55; /* brown tone */
+    margin: 5px 0;
+}
+
+/* ----- COLUMNS SECTION ----- */
+#columns {
+    width: 908px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.column {
+    width: 207px;
+    height: 382px;
+    background-color: #CBAE9C; /* beige tone */
+}
+
+/* ----- LAST ROW ----- */
+.row3 {
+    width: 908px;
+    height: 55px;
+    background-color: #6B2C2C; /* dark burgundy */
+    margin-top: 5px;
+}
