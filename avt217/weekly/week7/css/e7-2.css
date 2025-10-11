@@ -23,7 +23,7 @@ body {
 .row2 {
     width: 908px;
     height: 31px;
-    background-color: #00008B;
+    background-color: #FFF44F;
     margin: 5px 0;
 }
 
@@ -43,9 +43,10 @@ body {
 .row3 {
     width: 908px;
     height: 55px;
-    background-color: #ADD8E6;
+    background-color: #FFF44F;
     margin-top: 5px;
 }
+
 
 
 
