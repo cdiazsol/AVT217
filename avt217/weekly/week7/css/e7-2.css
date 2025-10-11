@@ -17,13 +17,13 @@ body {
 .row1 {
     width: 908px;
     height: 67px;
-    background-color: #D97373; /* soft red */
+    background-color: #ADD8E6
 }
 
 .row2 {
     width: 908px;
     height: 31px;
-    background-color: #B47C55; /* brown tone */
+    background-color: #00008B
     margin: 5px 0;
 }
 
@@ -37,13 +37,14 @@ body {
 .column {
     width: 207px;
     height: 382px;
-    background-color: #CBAE9C; /* beige tone */
+    background-color: #FFD700
 }
 
 .row3 {
     width: 908px;
     height: 55px;
-    background-color: #6B2C2C; /* dark burgundy */
+    background-color: #ADD8E6
     margin-top: 5px;
 }
+
 
