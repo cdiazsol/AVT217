@@ -1,4 +1,5 @@
 @charset "utf-8";
+/* CSS Document */
 
 * {
     margin: 0;
@@ -10,20 +11,20 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #f9f9f9;
+    background-color: white;
 }
 
 /* ----- ROWS ----- */
 .row1 {
     width: 908px;
     height: 67px;
-    background-color: #E57373; /* coral red */
+    background-color: #D97373; /* soft red */
 }
 
 .row2 {
     width: 908px;
     height: 31px;
-    background-color: #D19C57; /* warm gold */
+    background-color: #B47C55; /* brown tone */
     margin: 5px 0;
 }
 
@@ -38,21 +39,17 @@ body {
 .column {
     width: 207px;
     height: 382px;
+    background-color: #CBAE9C; /* beige tone */
 }
-
-/* each column with unique color */
-.column:nth-child(1) { background-color: #D7BFAE; }
-.column:nth-child(2) { background-color: #CFA98E; }
-.column:nth-child(3) { background-color: #B8896B; }
-.column:nth-child(4) { background-color: #CFA58A; }
 
 /* ----- LAST ROW ----- */
 .row3 {
     width: 908px;
     height: 55px;
-    background-color: #6E2C2C; /* deep wine red */
+    background-color: #6B2C2C; /* dark burgundy */
     margin-top: 5px;
 }
+
 
 
 
