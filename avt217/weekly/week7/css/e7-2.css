@@ -1,5 +1,4 @@
 @charset "utf-8";
-/* CSS Document */
 
 * {
     margin: 0;
@@ -11,22 +10,24 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: white;
+    background-color: #f9f9f9;
 }
 
+/* ----- ROWS ----- */
 .row1 {
     width: 908px;
     height: 67px;
-    background-color: #ADD8E6; /* <-- added semicolon */
+    background-color: #E57373; /* coral red */
 }
 
 .row2 {
     width: 908px;
     height: 31px;
-    background-color: #00008B; /* <-- added semicolon */
+    background-color: #D19C57; /* warm gold */
     margin: 5px 0;
 }
 
+/* ----- COLUMNS SECTION ----- */
 #columns {
     width: 908px;
     display: flex;
@@ -37,13 +38,19 @@ body {
 .column {
     width: 207px;
     height: 382px;
-    background-color: #FFD700; /* <-- added semicolon */
 }
 
+/* each column with unique color */
+.column:nth-child(1) { background-color: #D7BFAE; }
+.column:nth-child(2) { background-color: #CFA98E; }
+.column:nth-child(3) { background-color: #B8896B; }
+.column:nth-child(4) { background-color: #CFA58A; }
+
+/* ----- LAST ROW ----- */
 .row3 {
     width: 908px;
     height: 55px;
-    background-color: #ADD8E6; /* <-- added semicolon */
+    background-color: #6E2C2C; /* deep wine red */
     margin-top: 5px;
 }
 
