@@ -6,7 +6,10 @@ body {
   background: #8B0000;  
   color: #000;           
 }
-
+span {
+  color: #FFD700;
+  font-style: italic;
+}
 h1, h2, h3, h4 {
   font-family: 'Playfair Display', serif;
   color: #000;
@@ -36,5 +39,6 @@ a {
 a:hover {
   color: #333;
 }
+
 
 
