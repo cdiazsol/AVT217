@@ -1,53 +1,89 @@
 @charset "UTF-8";
-/* CSS Document */
+/* Thanksgiving Card Styles */
+
+body {
+  text-align: center;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: url("../img/pie.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #fff3e6;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+  backdrop-filter: brightness(0.85);
+}
+
+p {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0.5rem 0;
+}
+
+/* Default: desktop view hidden on mobile */
+.mobile-only {
+  display: none;
+}
+
+/* Inside card (desktop view) */
+#inside {
+  background: rgba(85, 47, 17, 0.75);
+  padding: 3rem;
+  border-radius: 20px;
+  max-width: 600px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+#inside h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  color: #ffdd99;
+  margin-bottom: 1rem;
+}
+
+#inside p {
+  font-size: 1.2rem;
+  text-transform: none;
+}
+
+.signature {
+  margin-top: 2rem;
+  font-style: italic;
+  color: #ffd7a8;
+}
+
+/* Responsive design: switch to mobile front of card */
+@media only screen and (max-width: 768px) {
   body {
-    text-align: center;
-    background:url("../img/pie.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background: url("../img/pie.jpg") no-repeat center center fixed;
     background-size: cover;
   }
 
-#container {
-
+  #container {
+    backdrop-filter: brightness(0.7);
   }
 
-  p {
-    text-transform:uppercase;
-  }
- 
-
-
-/* tell browser don't display it when screen is wider than 768px */
   .mobile-only {
+    display: block;
+    font-size: 2.5rem;
+    color: #ffedc2;
+  }
+
+  #cursive {
+    font-family: 'Great Vibes', cursive;
+    font-size: 4rem;
+    color: #ffcf73;
+    margin-top: 0.3rem;
+  }
+
+  /* Hide desktop content */
+  .desktop-only {
     display: none;
   }
-
-/* tell browser to do the followings when screen is at and narrower than 768px */
-  @media only screen and (max-width: 768px) {
-	  
-    body {
- 
-    }
-	  
-	#container {
- 
-    }
-	   
-    p {
-
-    }
-	  
-	#cursive {
-  	}
-	  
-    .mobile-only {
-   
-    }
-	  /* Now the style and content for desktop will not be displied */
-    .desktop-only {
-  
-    }
-
-} /* don't forget to close the styles for mobile/
+}
