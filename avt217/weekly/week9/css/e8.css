@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/* Thanksgiving Card Styles */
 
 body {
   text-align: center;
@@ -26,12 +25,10 @@ p {
   margin: 0.5rem 0;
 }
 
-/* Default: desktop view hidden on mobile */
 .mobile-only {
   display: none;
 }
 
-/* Inside card (desktop view) */
 #inside {
   background: rgba(85, 47, 17, 0.75);
   padding: 3rem;
@@ -58,7 +55,6 @@ p {
   color: #ffd7a8;
 }
 
-/* Responsive design: switch to mobile front of card */
 @media only screen and (max-width: 768px) {
   body {
     background: url("../img/pie.jpg") no-repeat center center fixed;
