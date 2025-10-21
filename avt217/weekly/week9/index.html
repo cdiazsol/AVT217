@@ -1,24 +1,29 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <title>Thanksgiving Card</title>
-    <!-- makes media query work on mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- link to google font stuff -->
-    <!-- end google font link -->
-    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/e8.css">
   </head>
-	
+
   <body>
     <div id="container">
-		<!-- for mobile -->
+      <!-- Front of the card (mobile) -->
       <p class="mobile-only">Happy</p>
       <p class="mobile-only" id="cursive">Thanksgiving</p>
-		<!-- for desktop -->
-      <p class="desktop-only"> as sweet as pumpkin pie </p>  
+
+      <!-- Inside of the card (desktop) -->
+      <div class="desktop-only" id="inside">
+        <h1>Wishing you a warm and joyful Thanksgiving</h1>
+        <p>May your day be filled with gratitude, laughter, and pumpkin pie!</p>
+        <p class="signature">— From all of us </p>
+      </div>
     </div>
   </body>
 </html>
-
