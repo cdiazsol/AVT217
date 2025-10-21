@@ -4,7 +4,7 @@ body {
   text-align: center;
   margin: 0;
   font-family: 'Open Sans', sans-serif;
-  background: url("../img/pie.jpg") no-repeat center center fixed;
+  background: url("css/leaves.png") no-repeat center center fixed;
   background-size: cover;
   color: #fff8ee;
 }
