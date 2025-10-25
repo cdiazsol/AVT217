@@ -1,17 +1,16 @@
 @charset "UTF-8";
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 body {
   text-align: center;
-  margin: 0;
   font-family: 'Open Sans', sans-serif;
   background: url("https://cdiazsol.github.io/AVT217/avt217/weekly/week9/css/leaves.png") no-repeat center center fixed;
   background-size: cover;
   color: #fff8ee;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
 }
 
 #container {
@@ -22,6 +21,8 @@ body {
   min-height: 100vh;
   padding: 1rem;
   background-color: rgba(0, 0, 0, 0.3);
+
+  box-sizing: border-box;
 }
 
 p {
@@ -80,4 +81,5 @@ p {
     display: none;
   }
 }
+
 
