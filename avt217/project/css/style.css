@@ -16,7 +16,6 @@ body {
   margin: 0 auto;
 }
 
-
 .site-header {
   background-color: #c8793f;
   border-bottom: 4px solid black;
@@ -52,7 +51,6 @@ body {
   color: #c1441b;
 }
 
-
 .title-bar {
   background-color: #b8733c;
   text-align: center;
@@ -66,7 +64,6 @@ body {
   font-size: 28px;
   display: inline-block;
 }
-
 
 .intro-section {
   padding: 40px 0;
@@ -104,7 +101,6 @@ body {
   margin-bottom: 8px;
 }
 
-
 .places-band {
   background-color: #76508a;
   text-align: center;
@@ -120,7 +116,6 @@ body {
   border: 2px solid rgba(0, 0, 0, 0.2);
   color: #2b231f;
 }
-
 
 .gallery-section {
   background-color: #76508a;
@@ -153,7 +148,6 @@ body {
   background-color: white;
 }
 
-
 .about-section {
   background-color: #5b3e36;
   text-align: center;
@@ -181,11 +175,11 @@ body {
   line-height: 1.6;
 }
 
-
 .site-footer {
   background-color: #c8793f;
   padding: 20px 0;
   border-top: 4px solid black;
+  text-align: center;
 }
 
 .footer-inner {
@@ -197,7 +191,6 @@ body {
   width: 30%;
   margin-top: 10px;
 }
-
 
 .footer-logo {
   width: 100px;
@@ -218,11 +211,13 @@ body {
   border: 2px solid rgba(0, 0, 0, 0.2);
   font-size: 15px;
   line-height: 1.6;
-  text-align: left; 
-  margin-top: 10px; 
+  text-align: left;
+  margin-top: 10px;
 }
 
-
+.clear-floats {
+  clear: both;
+}
 
 @media (max-width: 1024px) {
   .intro-left,
@@ -236,6 +231,8 @@ body {
     text-align: center;
   }
 }
+
+
 
 
 
