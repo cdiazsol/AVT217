@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>NY Travel Guide — Home</title>
+  <title>Places — Trips & Travel Planning</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
 
@@ -13,11 +13,11 @@
 
   <header class="site-header">
     <div class="header-inner page-wrapper">
-      <img class="logo" src="https://cdiazsol.github.io/AVT217/avt217/project/img/logo.png" alt="Trip & Travel Planning logo">
-      
-      <nav class="main-nav">
-        <a class="nav-link active" href="index.html">Homepage</a>
-        <a class="nav-link" href="places.html">Places</a>
+      <img class="logo" src="img/logo.png" alt="Trip & Travel Planning logo">
+
+      <nav class="main-nav" role="navigation" aria-label="Primary">
+        <a class="nav-link" href="index.html">Homepage</a>
+        <a class="nav-link active" href="places.html">Places</a>
         <a class="nav-link" href="brooklyn.html">Brooklyn</a>
         <a class="nav-link" href="manhattan.html">Manhattan</a>
         <a class="nav-link" href="about.html">About</a>
@@ -29,63 +29,57 @@
 
     <section class="title-bar">
       <div class="page-wrapper">
-        <h1>NY Travel Guide</h1>
+        <h1>New York</h1>
       </div>
-    </section>
-
-    <section class="intro-section">
-      <div class="page-wrapper">
-        <div class="intro-card">
-
-          <div class="intro-columns">
-            <div class="intro-left">
-              <p>
-                Get ready to explore the city that never sleeps. Here, you'll find the best spots to visit across
-                Brooklyn and Manhattan — from iconic landmarks to hidden local favorites. Walk across the Brooklyn
-                Bridge, discover art in DUMBO, or enjoy skyline views from the High Line.
-              </p>
-            </div>
-
-            <div class="intro-right">
-              <p>
-                We'll also take you on a taste journey through New York’s famous eats — pizza slices, bagels,
-                rooftop bites, and more. Whether you're here for a weekend or a week, our local tips and recommendations
-                will help you experience the real NYC.
-              </p>
-            </div>
-          </div>
-
-          <div class="intro-bottom">
-            <p>Let's make your New York trip unforgettable.</p>
-            <p>To continue click below!</p>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <section class="places-band">
-      <a class="places-cta" href="places.html">Places</a>
     </section>
 
     <section class="gallery-section">
       <div class="page-wrapper">
         <div class="gallery-card">
-
           <div class="gallery-columns">
-            <img class="gallery-img" src="https://cdiazsol.github.io/AVT217/avt217/project/img/Landscape1.png" alt="New York street view">
-            <img class="gallery-img" src="https://cdiazsol.github.io/AVT217/avt217/project/img/Landscape2.png" alt="Manhattan skyline">
+            <!-- left image -->
+            <img class="gallery-img" src="img/Brooklyn1.png" alt="Brooklyn view 1">
+            <!-- right image -->
+            <img class="gallery-img" src="img/Brooklyn2.png" alt="Brooklyn view 2">
           </div>
-
         </div>
       </div>
     </section>
 
     <div class="white-spacer"></div>
 
+
+    <section class="title-bar">
+      <div class="page-wrapper">
+        <h1>Brooklyn</h1>
+      </div>
+    </section>
+
+    <section class="gallery-section">
+      <div class="page-wrapper">
+        <div class="gallery-card">
+          <div class="gallery-columns">
+            <!-- left image -->
+            <img class="gallery-img" src="img/Manhattan1.png" alt="Manhattan view 1">
+            <!-- right image -->
+            <img class="gallery-img" src="img/Manhattan2.png" alt="Manhattan view 2">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="white-spacer"></div>
+
+    <section class="title-bar">
+      <div class="page-wrapper">
+        <h1>Manhattan</h1>
+      </div>
+    </section>
+
     <section class="about-section">
       <div class="page-wrapper">
-        <a class="about-cta" href="about.html">About Us</a>
+
+        <a class="about-cta" href="about.html">About us</a>
 
         <div class="about-card">
           <p>
@@ -95,37 +89,40 @@
             some famous restaurants in the area where you can discover the delicious dishes you've been looking for.
           </p>
         </div>
+
       </div>
     </section>
 
   </main>
 
   <footer class="site-footer">
-  <div class="footer-inner page-wrapper">
+    <div class="footer-inner page-wrapper">
 
-    <div class="footer-left">
-      <img class="footer-logo" src="https://cdiazsol.github.io/AVT217/avt217/project/img/logo.png" alt="Footer logo">
+      <div class="footer-left">
+        <img class="footer-logo" src="img/logo.png" alt="Trip & Travel Planning logo">
 
-      <div class="socials">
-        <img src="https://cdiazsol.github.io/AVT217/avt217/project/img/Instagram_logo.png" alt="Instagram">
-        <img src="https://cdiazsol.github.io/AVT217/avt217/project/img/Facebook_logo.png" alt="Facebook">
+        <div class="socials" aria-hidden="false">
+          <img src="img/Instagram_logo.png" alt="Instagram">
+          <img src="img/Facebook_logo.png" alt="Facebook">
+        </div>
       </div>
+
+      <div class="footer-mission">
+        <p>
+          Our mission: make your New York adventure unforgettable falling in love with surroundings, food and people.
+          Let us support you on your plannings and share us your experience!
+        </p>
+      </div>
+
+      <!-- clear floats so footer wraps correctly -->
+      <div class="clear-floats"></div>
     </div>
-
-    <div class="footer-mission">
-      <p>
-        Helping travelers discover the most iconic spots in NYC, along with local favorites brought to life through our curated guides.
-        Explore Brooklyn, Manhattan, and beyond with confidence and excitement!
-      </p>
-    </div>
-
-    <div class="clear-floats"></div>
-
-  </div>
-</footer>
-
+  </footer>
 
 </body>
 </html>
+
+</html>
+
 
 
