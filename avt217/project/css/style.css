@@ -16,6 +16,7 @@ body {
   margin: 0 auto;
 }
 
+
 .site-header {
   background-color: #c8793f;
   border-bottom: 4px solid black;
@@ -51,6 +52,7 @@ body {
   color: #c1441b;
 }
 
+
 .title-bar {
   background-color: #b8733c;
   text-align: center;
@@ -65,6 +67,7 @@ body {
   display: inline-block;
 }
 
+
 .intro-section {
   padding: 40px 0;
   background-color: white;
@@ -78,7 +81,7 @@ body {
 
 .intro-columns {
   width: 100%;
-  overflow: hidden; 
+  overflow: hidden;
   margin-bottom: 30px;
 }
 
@@ -101,6 +104,7 @@ body {
   margin-bottom: 8px;
 }
 
+
 .places-band {
   background-color: #76508a;
   text-align: center;
@@ -117,6 +121,7 @@ body {
   color: #2b231f;
 }
 
+
 .gallery-section {
   background-color: #76508a;
   padding: 40px 0 100px 0;
@@ -131,7 +136,7 @@ body {
 
 .gallery-columns {
   width: 100%;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .gallery-img {
@@ -147,6 +152,7 @@ body {
   height: 40px;
   background-color: white;
 }
+
 
 .about-section {
   background-color: #5b3e36;
@@ -175,6 +181,7 @@ body {
   line-height: 1.6;
 }
 
+
 .site-footer {
   background-color: #c8793f;
   padding: 20px 0;
@@ -182,8 +189,6 @@ body {
 }
 
 .footer-inner {
-  width: 90%;
-  margin: 0 auto;
   overflow: hidden;
 }
 
@@ -213,6 +218,7 @@ body {
   line-height: 1.6;
 }
 
+
 @media (max-width: 1024px) {
   .intro-left,
   .intro-right,
@@ -225,3 +231,5 @@ body {
     text-align: center;
   }
 }
+
+
