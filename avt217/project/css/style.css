@@ -34,6 +34,11 @@ body {
   width: auto;
 }
 
+.title-bar.white-title {
+  background: #ffffff; 
+  color: #000000; 
+}
+
 .main-nav {
   display: flex;
   gap: 20px;
@@ -247,6 +252,7 @@ body {
     text-align: center;
   }
 }
+
 
 
 
