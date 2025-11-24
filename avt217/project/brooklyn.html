@@ -3,22 +3,24 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Places — Trips & Travel Planning</title>
+  <title>Brooklyn — Trips & Travel Planning</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
 
+  <!-- Your shared global stylesheet -->
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
   <header class="site-header">
     <div class="header-inner page-wrapper">
       <img class="logo" src="img/logo.png" alt="Trip & Travel Planning logo">
 
-      <nav class="main-nav" role="navigation" aria-label="Primary">
+      <nav class="main-nav" role="navigation" aria-label="Primary Navigation">
         <a class="nav-link" href="index.html">Homepage</a>
-        <a class="nav-link active" href="places.html">Places</a>
-        <a class="nav-link" href="brooklyn.html">Brooklyn</a>
+        <a class="nav-link" href="places.html">Places</a>
+        <a class="nav-link active" href="brooklyn.html">Brooklyn</a>
         <a class="nav-link" href="manhattan.html">Manhattan</a>
         <a class="nav-link" href="about.html">About</a>
       </nav>
@@ -33,61 +35,87 @@
       </div>
     </section>
 
-    <section class="gallery-section">
-      <div class="page-wrapper">
-        <div class="gallery-card">
-          <div class="gallery-columns">
-            <img class="gallery-img" src="img/Brooklyn1.png" alt="Brooklyn view 1">
-            <img class="gallery-img" src="img/Brooklyn2.png" alt="Brooklyn view 2">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="white-spacer"></div>
-
-
     <section class="title-bar">
       <div class="page-wrapper">
-        <a href="brooklyn.html" class="title-link">
-          <h1>Brooklyn</h1>
-        </a>
+        <h1>Brooklyn</h1>
       </div>
     </section>
 
     <section class="gallery-section">
       <div class="page-wrapper">
+
         <div class="gallery-card">
           <div class="gallery-columns">
-            <img class="gallery-img" src="img/Manhattan1.png" alt="Manhattan view 1">
-            <img class="gallery-img" src="img/Manhattan2.png" alt="Manhattan view 2">
+
+            <img class="gallery-img" src="img/Brooklyn1.png"
+                 alt="Brooklyn Bridge skyline">
+
+            <article class="about-card" style="float:right; width:48%; margin:1%;">
+              <p>
+                Brooklyn, one of the five boroughs of New York City, southwestern Long Island, southeastern
+                New York state, U.S., coextensive with Kings County. It is separated from <strong>Manhattan</strong>
+                by the East River and is bordered by the Upper and Lower New York bays (west), the Atlantic
+                Ocean (south), and the borough of Queens (north and east).
+              </p>
+            </article>
+
           </div>
         </div>
+
       </div>
     </section>
+
 
     <div class="white-spacer"></div>
 
-    <section class="title-bar">
+
+    <section class="gallery-section">
       <div class="page-wrapper">
-        <a href="manhattan.html" class="title-link">
-          <h1>Manhattan</h1>
-        </a>
+
+        <div class="gallery-card">
+          <div class="gallery-columns">
+
+            <img class="gallery-img" src="img/BrooklynFood.png"
+                 alt="Brooklyn local food">
+
+            <article class="about-card" style="float:right; width:48%; margin:1%;">
+              <p>
+                Brooklyn’s food scene reflects its cultural mix and history, offering everything from classic
+                New York–style pizza and bagels with lox to Caribbean favorites like <strong>jerk chicken</strong> and patties.
+                Italian-American dishes such as pasta and cannoli remain staples, while Polish pierogi and kielbasa
+                highlight the area’s Eastern European roots.
+              </p>
+            </article>
+
+          </div>
+        </div>
+
       </div>
     </section>
 
-    <section class="about-section">
+
+    <div class="white-spacer"></div>
+
+
+    <section class="gallery-section">
       <div class="page-wrapper">
 
-        <a class="about-cta" href="about.html">About us</a>
+        <div class="gallery-card">
+          <div class="gallery-columns">
 
-        <div class="about-card">
-          <p>
-            In “Trips and Travel Planning,” you’ll find perfect tips and methods for exploring—especially
-            the city of New York City. Through our website, we’ll show you the most well-known spots throughout
-            Brooklyn and Manhattan. We’ll also highlight the most popular and tourist-friendly places, along with
-            some famous restaurants in the area where you can discover the delicious dishes you've been looking for.
-          </p>
+            <img class="gallery-img" src="img/Brooklyn2.png"
+                 alt="Brooklyn Bridge waterfront view">
+
+            <article class="about-card" style="float:right; width:48%; margin:1%;">
+              <p>
+                Few places in NYC do not offer a iconic skyline view of the city. Enjoy the New York Harbor from the granite
+                steps – built from stones salvaged from the Roosevelt Island Bridge reconstruction –, lay on one of the three
+                magnificent lawns for an amazing panoramic view of lower Manhattan, or plop yourself down on a bench on the
+                waterfront promenade for a unique waterfront experience.
+              </p>
+            </article>
+
+          </div>
         </div>
 
       </div>
@@ -95,17 +123,19 @@
 
   </main>
 
+
+
   <footer class="site-footer">
     <div class="footer-inner page-wrapper">
 
-      <div class="footer-left">
+      <aside class="footer-left">
         <img class="footer-logo" src="img/logo.png" alt="Trip & Travel Planning logo">
 
-        <div class="socials" aria-hidden="false">
+        <div class="socials">
           <img src="img/Instagram_logo.png" alt="Instagram">
           <img src="img/Facebook_logo.png" alt="Facebook">
         </div>
-      </div>
+      </aside>
 
       <div class="footer-mission">
         <p>
@@ -115,6 +145,7 @@
       </div>
 
       <div class="clear-floats"></div>
+
     </div>
   </footer>
 
