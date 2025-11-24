@@ -203,17 +203,20 @@ body {
   margin-right: 8px;
 }
 
-.title-link {
-    text-decoration: none;   
-    color: black;            
+.title-link:link,
+.title-link:visited,
+.title-link:hover,
+.title-link:active {
+    color: black;
+    text-decoration: none;
 }
 
 .title-link h1 {
-    color: black;            
+    color: black;
 }
 
 .title-link:hover h1 {
-    text-decoration: underline; 
+    text-decoration: underline;
 }
 
 .footer-mission {
@@ -244,6 +247,7 @@ body {
     text-align: center;
   }
 }
+
 
 
 
