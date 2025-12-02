@@ -58,16 +58,33 @@ body {
 }
 
 .title-bar h1 {
-  background-color: #e7c79b;
+  background-color: #ffffff;
   border: 2px solid rgba(0, 0, 0, 0.3);
   padding: 8px 22px;
   font-size: 28px;
   display: inline-block;
+  color: black;
 }
 
-.title-bar.white-title {
-  background: #ffffff;
-  color: #000000;
+/* Override Manhattan or other titles to remain normal */
+.title-bar.default h1 {
+  background-color: #e7c79b !important;
+}
+
+.title-link:link,
+.title-link:visited,
+.title-link:hover,
+.title-link:active {
+    color: black;
+    text-decoration: none;
+}
+
+.title-link h1 {
+    color: black;
+}
+
+.title-link:hover h1 {
+    text-decoration: underline;
 }
 
 .intro-section {
@@ -153,39 +170,6 @@ body {
   background-color: white;
 }
 
-.about-section {
-  background-color: #5b3e36;
-  text-align: center;
-  padding: 60px 0 80px 0;
-}
-
-.about-cta {
-  text-decoration: none;
-  background-color: #f0d7ad;
-  padding: 12px 60px;
-  font-size: 20px;
-  font-weight: 600;
-  border: 2px solid rgba(0, 0, 0, 0.2);
-  color: #2b231f;
-  margin-bottom: 30px;
-}
-
-.about-card {
-  background-color: #f0d7ad;
-  width: 80%;
-  margin: 0 auto;
-  padding: 30px;
-  border: 2px solid rgba(0, 0, 0, 0.2);
-  font-size: 15px;
-  line-height: 1.6;
-}
-
-.about-bottom-img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
 .site-footer {
   background-color: #c8793f;
   padding: 20px 0;
@@ -193,9 +177,49 @@ body {
   text-align: center;
 }
 
-.footer-inner {
+.about-no-footer .page-wrapper {
+  max-width: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.about-no-footer .site-footer {
+  display: none !important;
+}
+
+.about-section {
+  background-color: #5b3e36;
+  width: 100%;
+  margin: 0;
+  padding: 60px 0 80px 0;
+  text-align: center;
   overflow: hidden;
 }
+
+.about-card {
+  background-color: #f0d7ad;
+  width: 100%;
+  margin: 0;
+  padding: 40px;
+  border: none;
+  font-size: 15px;
+  line-height: 1.6;
+  border-radius: 0;
+}
+
+.about-bottom-img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.footer-inner { overflow: hidden; }
 
 .footer-left {
   float: left;
@@ -226,29 +250,7 @@ body {
   margin-top: 10px;
 }
 
-.clear-floats {
-  clear: both;
-}
-
-.about-no-footer .site-footer {
-  display: none;
-}
-
-.title-link:link,
-.title-link:visited,
-.title-link:hover,
-.title-link:active {
-    color: black;
-    text-decoration: none;
-}
-
-.title-link h1 {
-    color: black;
-}
-
-.title-link:hover h1 {
-    text-decoration: underline;
-}
+.clear-floats { clear: both; }
 
 @media (max-width: 1024px) {
   .intro-left,
@@ -262,6 +264,8 @@ body {
     text-align: center;
   }
 }
+
+
 
 
 
